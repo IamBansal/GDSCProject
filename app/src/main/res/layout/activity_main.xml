@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ivLogin"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:text="Welcome Back" />
+
+    <ImageView
+        android:id="@+id/ivLogin"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/etEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/login" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="297dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/themeColor"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:text="Don't have an account? "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvSignup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerInParent="true"
+        android:textColor="@color/themeColor"
+        android:layout_toRightOf="@id/tvSignup"
+        android:layout_marginTop="40dp"
+        android:text="Sign up"
+        android:textSize="15dp" />
+
+</RelativeLayout>

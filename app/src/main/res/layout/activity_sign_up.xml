@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create your Account"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvgetStart"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCreate"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up and get started"
+        android:textColor="@color/grey" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvgetStart"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/signup" />
+
+    <EditText
+        android:id="@+id/etEmailSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSignup"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etpassSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailSign"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:layout_marginBottom="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etConfirmSign"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etpassSign"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:layout_below="@id/etConfirmSign"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/themeColor"
+        android:elevation="20dp"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

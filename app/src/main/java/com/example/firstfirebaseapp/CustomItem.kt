@@ -1,3 +1,3 @@
 package com.example.firstfirebaseapp
 
-class CustomItem(var id : Int, var item : String, var price : String)
+class CustomItem(var id : Int, var item : String, var price : String, var date : String)

@@ -24,8 +24,8 @@ class AddItem : AppCompatActivity() {
             val itemText = itemInput.text.toString().trim()
             val priceText = priceInput.text.toString().trim()
 
-            /*
-            This code is for updated date at time when item is added. But is showing an error.
+//            /*
+//            This code is for updated date at time when item is added. But is showing an error.
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 val current = LocalDateTime.now()
@@ -41,11 +41,11 @@ class AddItem : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Can't display date and time due to android version.", Toast.LENGTH_SHORT).show()
             }
 
-             */
-
-            DB.addData(itemText, priceText)
-            Toast.makeText(this, "Item Added", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, AppMainView::class.java))
+//             */
+//
+//            DB.addData(itemText, priceText)
+//            Toast.makeText(this, "Item Added", Toast.LENGTH_SHORT).show()
+//            startActivity(Intent(this, AppMainView::class.java))
         }
 
     }

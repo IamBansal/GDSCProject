@@ -34,15 +34,16 @@ class CustomItemAdapter(var context: Context,private var data : ArrayList<Custom
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.item.text = data[position].item
-        holder.price.text = data[position].price
+        holder.price.text = "₹ ${data[position].price}"
         holder.id.text = data[position].id.toString()
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val current = LocalDateTime.now()
-            val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy. HH:mm:ss")
+            val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy. HH:mm")
             holder.date.text = current.format(formatter)
+            holder.date.text = data[position].date
         } else {
-            Toast.makeText(context, "Can't display date and time due to android version.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Can't display date and time due to lower android version.", Toast.LENGTH_SHORT).show()
         }
 
 

@@ -49,7 +49,7 @@ class AppMainView : AppCompatActivity() {
         }
 
         while (data.moveToNext()) {
-            lists.add(CustomItem(data.getInt(0),data.getString(1),data.getString(2)))
+            lists.add(CustomItem(data.getInt(0),data.getString(1),data.getString(2), data.getString(3)))
         }
     }
 
